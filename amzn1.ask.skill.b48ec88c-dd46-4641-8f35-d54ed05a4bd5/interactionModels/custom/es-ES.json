@@ -1,0 +1,180 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "slots": [],
+          "name": "HelloWorldIntent",
+          "samples": [
+            "hola",
+            "como estás",
+            "di hola mundo",
+            "di hola",
+            "hola mundo"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "tulip",
+              "type": "tulip"
+            }
+          ],
+          "name": "origen",
+          "samples": [
+            "de donde son los {tulip}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "roj",
+              "type": "tulip"
+            }
+          ],
+          "name": "tiposTulipanes",
+          "samples": [
+            "cuantos tipoos de tulipanes hay {roj}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "oproj",
+              "type": "tulip"
+            }
+          ],
+          "name": "DCurTul",
+          "samples": [
+            "dime una curiosidad de los tulipanes {oproj}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "dosroj",
+              "type": "tulip"
+            }
+          ],
+          "name": "DCDOS",
+          "samples": [
+            "otro dato curioso sobre los tulipanes {dosroj}"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "respuesta",
+              "type": "respuestas"
+            }
+          ],
+          "name": "GuardarRespuestaIntent",
+          "samples": [
+            "la {respuesta}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "IniciarCuestionarioIntent",
+          "samples": [
+            "comenzar",
+            "iniciar cuestionario"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ContinarCuestionarioIntent",
+          "samples": [
+            "siguiente",
+            "la que sigue"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "TerminarCuestionarioIntent",
+          "samples": [
+            "terminar",
+            "finalizar"
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "name",
+              "type": "AMAZON.SearchQuery"
+            }
+          ],
+          "name": "GuardarNombreIntent",
+          "samples": [
+            "me llamo {name}"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "amarillo"
+              },
+              "id": "3"
+            },
+            {
+              "name": {
+                "value": "blanco"
+              },
+              "id": "2"
+            },
+            {
+              "name": {
+                "value": "rojo"
+              },
+              "id": "1"
+            }
+          ],
+          "name": "tulip"
+        },
+        {
+          "values": [
+            {
+              "name": {
+                "value": "tres"
+              },
+              "id": "3"
+            },
+            {
+              "name": {
+                "value": "dos"
+              },
+              "id": "2"
+            },
+            {
+              "name": {
+                "value": "uno"
+              },
+              "id": "1"
+            }
+          ],
+          "name": "respuestas"
+        }
+      ],
+      "invocationName": "flores bonitas"
+    }
+  }
+}
